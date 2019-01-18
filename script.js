@@ -23,22 +23,26 @@ let friends = []
 function addFriend() {
     document.getElementById("form").value;
     input = document.getElementById("form").value
+    //pushes names into an empty array (friends)
     friends.push(input);
     console.log(friends);
 }
 
 function printLines() {
-    for (i = 0; i < friends. length; i++) {
+    for (i = 0; i < friends.length; i++) {
+        document.getElementById("print").innerHTML = document.getElementById("print").innerHTML + "<br>" + friends[i] + ":";
         console.log(friends[i] + ":")
         for (j = 99; j >= 1; j--) {
-            if (j === 1) {
-            console.log(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, " + j + " line of code in the file")
+            if (j == 1) {
+                document.getElementById("print").innerHTML = document.getElementById('print').innerHTML + "<br>" + j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, " + j + " line of code in the file";
+                console.log(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, " + j + " line of code in the file");
             } else {
-                console.log(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + j + " lines of code in the file")
-            } 
+                    document.getElementById("print").innerHTML = document.getElementById('print').innerHTML + "<br>" + j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + j + " lines of code in the file";
+                    console.log(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + j + " lines of code in the file")
+                }
         }
     }
-    }
+}
 
 
 
@@ -53,7 +57,7 @@ function makeFriends (besties) {
             console.log(j + " line of code in the file, " + j + " line of code; " + besties[i] + " strikes one out, clears it all out, " + j + " line of code in the file")
             } else {
                 console.log(j + " lines of code in the file, " + j + " lines of code; " + besties[i] + " strikes one out, clears it all out, " + j + " lines of code in the file")
-            } 
+            }
         }
     }
     }
