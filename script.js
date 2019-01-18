@@ -1,9 +1,9 @@
 
 
-let friends = ["Sydney", "Chris", "Tyler", "Joseph", "Drew"];
+//let friends = ["Sydney", "Chris", "Tyler", "Joseph", "Drew"];
 
 
-
+/*
 for (i = 0; i < friends. length; i++) {
     console.log(friends[i] + ":")
     for (j = 99; j >= 1; j--) {
@@ -14,9 +14,52 @@ for (i = 0; i < friends. length; i++) {
         } 
     }
 }
+}
+*/
+
+let friends = []
+
+
+function addFriend() {
+    document.getElementById("form").value;
+    input = document.getElementById("form").value
+    friends.push(input);
+    console.log(friends);
+}
+
+function printLines() {
+    for (i = 0; i < friends. length; i++) {
+        console.log(friends[i] + ":")
+        for (j = 99; j >= 1; j--) {
+            if (j === 1) {
+            console.log(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, " + j + " line of code in the file")
+            } else {
+                console.log(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + j + " lines of code in the file")
+            } 
+        }
+    }
+    }
 
 
 
+/*
+let besties = ["Sydney", "Chris", "Tyler", "Joseph", "Drew"];
+
+function makeFriends (besties) {
+    for (i = 0; i < besties.length; i++) {
+        console.log(besties[i] + ":")
+        for (j = 99; j >= 1; j--) {
+            if (j == 1) {
+            console.log(j + " line of code in the file, " + j + " line of code; " + besties[i] + " strikes one out, clears it all out, " + j + " line of code in the file")
+            } else {
+                console.log(j + " lines of code in the file, " + j + " lines of code; " + besties[i] + " strikes one out, clears it all out, " + j + " lines of code in the file")
+            } 
+        }
+    }
+    }
+
+makeFriends(besties)
+*/
 
 
 
