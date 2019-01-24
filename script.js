@@ -29,9 +29,11 @@ function addFriend() {
 }
 
 function printLines() {
+    //loops through names
     for (i = 0; i < friends.length; i++) {
         document.getElementById("print").innerHTML = document.getElementById("print").innerHTML + "<br>" + friends[i] + ":";
         console.log(friends[i] + ":")
+    //loops through
         for (j = 99; j >= 1; j--) {
             if (j == 1) {
                 document.getElementById("print").innerHTML = document.getElementById('print').innerHTML + "<br>" + j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, " + j + " line of code in the file";
